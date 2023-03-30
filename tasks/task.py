@@ -10,14 +10,11 @@ def linear_seq(sequence: List[Any]) -> List[Any]:
             if i == int(i):
                 new_numbers.append(i)
         except TypeError:
-            for k in i:
-                try:
-                    if k == int(k):
-                        new_numbers.append(k)
-                except TypeError:
-                    for f in k:
-                        new_numbers.append(f)
+                new_numbers += linear_seq(i)
     return new_numbers
+
+
+
 
 
 
