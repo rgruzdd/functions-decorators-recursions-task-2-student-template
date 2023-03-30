@@ -19,7 +19,5 @@ def linear_seq(sequence: List[Any]) -> List[Any]:
                         new_numbers.append(f)
     return new_numbers
 
-sequence = [1,2,3,[4,5, (6,7)]]
-print(linear_seq(sequence))
 
 
